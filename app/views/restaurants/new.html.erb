@@ -1,0 +1,7 @@
+<%= simple_form_for(@restaurants) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :rating %>
+  <%= f.input :category, collection: ["chinese", "italian", "japanese", "french", "belgian"] %>
+  <%= f.submit %>
+<% end %>
