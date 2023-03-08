@@ -1,1 +1,2 @@
 <%= @restaurants.name %>
+<%= link_to 'Delete', restaurant_path(@restaurants), method: :delete, data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
